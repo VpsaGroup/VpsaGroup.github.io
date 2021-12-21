@@ -19,6 +19,8 @@ p{
     font-weight: 400;
     color: #606060;
 }
+
+/* ********************************************* Navbar ********************************************************* */
 .header{
 width: 100%;
 height: 100vh;
@@ -27,6 +29,15 @@ background-repeat: no-repeat;
 background-size: 100% 100%;
 position: relative;
 clip-path: polygon(100% 0%,100% 74%,52% 100%,0 75%,0 0);
+}
+.vlogo{
+    font-size:25px;
+    margin: 5px 50px;
+}
+.vul{
+    font-size:18px; 
+    margin: 5px 10px; 
+    /* line-height: 0.7; */
 }
 .header:before{
 content: "";
@@ -97,22 +108,55 @@ z-index: -1;
     padding: 10px 0 20px 0;
     color: #fff;
 }
-/* ***********************************  service section */
+
+@media screen and (max-width:600px){.header{
+    height: 70vh;
+    clip-path: polygon(100% 0%,100% 84%,50% 100%,0 85%,0 0);
+}}
+@media screen and (max-width:600px){.header-section h1{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}}
+@media screen and (max-width:600px){.center-div{
+    top:30%
+}}
+@media screen and (max-width:600px){.center-div p{
+    font-size: 0.9rem;
+    padding: 7px 0 20px 0;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}}
+@media screen and (max-width:600px){.header-buttons a{
+    border: 1px solid #fff;
+    border-radius:100px;
+    margin:0 3px;
+    padding: 12px 30px;
+    outline: none;
+    color:#fff;
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}}
+@media screen and (max-width:600px) {.vlogo{
+    font-size:20px;
+    margin: 5px 5px;
+}}
+@media screen and (max-width:600px) {.vul{
+    font-size:12px; 
+    margin: 5px 10px; 
+    line-height: 0.7;
+}}
+
+
+/* ***********************************  service section ****************************************************************/
 
 .ba2{
-    background-image:linear-gradient(rgb(107, 225, 230, 0.377),rgba(60, 197, 238, 0.658),rgba(107, 225, 230, 0.377)), url('constructi.jpg');
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(107, 225, 230, 0.377),rgba(60, 197, 238, 0.658),rgba(107, 225, 230, 0.377),rgb(255, 255, 255)), url('constructi.jpg');
 }
-
-.carousel-cell {
-    width: 35%;
-    height: 450px;
-    padding: 20px;
-    /* cellAlign: 'left'; */
-    /* margin-left: 100px; */
-}
-.flickity-page-dots {
-    display: none;
-  }
 .card{
     border: none;
     margin: 20px;
@@ -144,9 +188,25 @@ z-index: -1;
     color: rgb(0, 0, 0);
     transition: .5s;
 }
-/* ********************************************************** */
+@media screen and (max-width:600px) {.circle{
+    height: 40px;
+    width: 40px;
+    background-color: lightgray;
+    color:black;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+@media screen and (max-width:600px) {.serh1,.p{
+    font-size: 28px;
+}}
+    
+}
+/* ****************** contact section **************************************** */
 .contact-section{
-    background-image:linear-gradient(rgba(107, 225, 230, 0.377),rgba(0, 195, 255, 0.658)), url('constructi.jpg');
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(107, 225, 230, 0.377),rgba(60, 197, 238, 0.658),rgba(107, 226, 230, 0.87)), url('constructi.jpg');
     padding: 80px 0;
     text-align: center;
 }
@@ -205,7 +265,10 @@ z-index: -1;
 @media screen and (max-width:600px){.name,.email{
     width: 100%;
 }}
-/* ************************** */
+@media screen and (max-width:600px) {.geth1,.vmh1,.wch1{
+    font-size: 28px;
+}}
+/* ********************************** about section *********************************** */
 .about-section{
     background: url(painter1.jpg) no-repeat left;
     background-size: 40%;
@@ -243,6 +306,14 @@ z-index: -1;
     text-align: justify;
     margin-bottom: 10px;
 }
+@media screen and (max-width:600px) {
+    .inner-container h1{
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+}
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 40px;
@@ -268,12 +339,15 @@ z-index: -1;
         padding: 0;
     }
     .inner-container{
-        padding: 60px;
+        padding: 20px;
     }
     .inner-container2{
-        padding: 60px;
+        padding: 20px;
     }
 }
+@media screen and (max-width:600px) {.abh1{
+    font-size: 28px;
+}}
 /* **************************************************************************************** */
 #myBtn {
     display: none;
@@ -284,11 +358,11 @@ z-index: -1;
     border:none; 
     outline: none; 
     background-color: rgba(168, 222, 230, 0); 
-    color: rgb(46, 84, 155); 
+    color: rgba(3, 104, 134, 0.815); 
     cursor: pointer;
     padding: 15px; 
     border-radius:5%; 
-    font-size: 50px; 
+    font-size: 35px; 
   }
   #myBtn:hover {
     box-shadow: none;
